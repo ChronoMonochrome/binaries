@@ -1,0 +1,7 @@
+FILTER=""
+while read line
+do
+	FILTER=$(echo $line | cut -d " " -f1)" "$FILTER
+done < $1
+
+echo $FILTER

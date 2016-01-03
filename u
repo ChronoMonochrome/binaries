@@ -1,1 +1,1 @@
-python ~/.ftp_uploader/uploader.py $PASS $1 /XDA-files/ChronoMonochrome/misc/
+python $PWD/f/uploader.py $PASS $1 /XDA-files/ChronoMonochrome/misc/
