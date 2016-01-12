@@ -1,1 +1,10 @@
-python $PWD/f/uploader.py $PASS $1 /XDA-files/ChronoMonochrome/misc/
+#!/bin/bash
+
+if [ "$PASS" == "" ] ; then
+	stty -echo
+	read -p "Password: " PASS
+	stty echo
+	printf '\n'
+fi
+
+python $HOME/ftp_uploader/uploader.py $PASS $1 /XDA-files/ChronoMonochrome/misc/
